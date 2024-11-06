@@ -128,6 +128,8 @@ class Graph_to_CNF():
         
         out_file = open("output.txt", 'w')
         out_file.write(output)
+        out_file.close()
+        print(output)
 
 if __name__=="__main__":
     # check for the number of arguments
