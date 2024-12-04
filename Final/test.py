@@ -9,7 +9,8 @@ def greedy(input_set):
 def ckk(input_set):
     prtpy.partition(algorithm=prtpy.partitioning.complete_karmarkar_karp, numbins=2, items=input_set)
 
-saveF = open("output", 'w')
+#saveF = open("output", 'w')
+saveF = None
 step = 1
 while step <= 20:
     testset = [random.randint(0, step) for _ in range(0, step)]
